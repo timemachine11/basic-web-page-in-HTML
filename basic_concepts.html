@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>etiquetas básicas - HTML</title>
+
+    <style type="text/css">
+        body {
+            color: #000000;
+        }
+    </style>
+
+    <script>
+        function myFunction() {
+            let x = document.getElementById("iname");
+            x.value = x.value.toUpperCase();
+        }
+    </script>
+</head>
+
+<body>
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>
+        <font face="arial" size="200" color="red">h6</font>
+    </h6>
+
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+        only five centuries, but also the leap
+        into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum
+        passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+        Ipsum.
+    </p>
+
+    <p>
+        <strong>bold</strong><br>
+        <em>italic</em><br>
+        <u>underline</u><br>
+        <strike>strike</strike>
+    </p>
+
+    <p>line 1 line 2 line 3 &nbsp;&nbsp;&nbsp;&nbsp; line 4...</p>
+
+    <p>
+        enter your name: <input type="text" id="iname" onchange="myFunction()">
+    </p>
+
+    <h2>lines...</h2>
+
+    <p>
+        line 1<br>
+        line 2<br>
+        line 3<br>
+        line 4<br>
+        line 5
+    </p>
+
+    <h2>tab (*)</h2>
+
+    <ul>
+        <li>tab 1</li>
+        <li>tab 2</li>
+        <li>tab 3</li>
+        <li>tab 4</li>
+    </ul>
+
+    <h2>tab (1)</h2>
+
+    <ol>
+        <li>tab 1</li>
+        <li>tab 2</li>
+        <li>tab 3</li>
+        <li>tab 4</li>
+    </ol>
+
+    <h2>pictures</h2>
+
+    <a href="http://google.com" target="_blank"><img src="https://wallpaperaccess.com/full/2161327.jpg" width="200"
+            alt="uhh.."></a><br>
+    <a href="http://youtube.com" target="_blank">youtube.com</a><br>
+    <img src="https://wallpaperaccess.com/full/2161339.jpg" width="200" alt="uhh.."><br>
+    <img src="https://www.nicepng.com/png/detail/129-1298377_animated-panda-png-clip-art-free-download-panda.png"
+        width="200" alt="uhh.."><br>
+
+    <h2>video</h2>
+
+    <p>
+        <video width="300" controls>
+            <source src="ya.mp4" type="video/mp4">
+            uhh...
+        </video>
+    </p>
+
+    <h2>table</h2>
+
+    <table width="50%" border="1" bordercolor="purple" cellspacing="10" cellpadding="10">
+        <tr>
+            <th background="https://www.macmillandictionary.com/external/slideshow/thumb/Grey_thumb.png">cabecera 1</th>
+            <th>cabecera 2</th>
+        </tr>
+
+        <tr>
+            <td>panama</td>
+            <td>1123</td>
+        </tr>
+
+        <tr>
+            <td>cocle</td>
+            <td>4422</td>
+        </tr>
+
+        <tr>
+            <td>herrera</td>
+            <td>0090</td>
+        </tr>
+    </table>
+
+    <h2>form</h2>
+
+    <form action="" method="post" name="">
+        <table width="50%">
+            <tr>
+                <td colspan="2">employment application</td>
+            </tr>
+
+            <tr>
+                <td>first name:</td>
+                <td><input type="text" name="" maxlength="50"></td>
+            </tr>
+
+            <tr>
+                <td>last name:</td>
+                <td><input type="text" name="" maxlength="50"></td>
+            </tr>
+
+            <tr>
+                <td>position:</td>
+                <td>
+                    <select name="">
+                        <option value="">option 1</option>
+                        <option value="">option 2</option>
+                        <option value="">option 3</option>
+                        <option value="">option 4</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>experience level:</td>
+                <td>
+                    <select name="experience">
+                        <option value="">level 1</option>
+                        <option value="">level 2</option>
+                        <option value="">level 3</option>
+                        <option value="">level 4</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>job type:</td>
+                <td>
+                    <input type="checkbox" name="ft" checked>full-time
+                    <input type="checkbox" name="fpt">part-time
+                    <input type="checkbox" name="ct">contact
+                </td>
+            </tr>
+
+            <tr>
+                <td>employment status</td>
+                <td>
+                    <input type="radio" name="status" value="student">student
+                    <input type="radio" name="status" value="employed">employed
+                    <input type="radio" name="status" value="unemployed""">unemployed
+                </td>
+            </tr>
+
+            <tr>
+                <td>additional comments</td>
+                <td>
+                    <textarea name="comments" cols="15" rows="5"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="submit">
+                    <input type="reset" value="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <h2>iframes</h2>
+
+    <iframe src="https://www.diaadia.com.pa/" width="100%" height="500" frameborder="0">
+        <p>
+            your browser does not support iframes...
+        </p>
+    </iframe>
+</body>
+
+</html>
